@@ -16,24 +16,26 @@
             <div>
                 <label for="firstname"><span class="required-field">*</span>Your First Name</label>
                     <input type="text" id="firstname" name="firstname" required minlength="2" maxlength="35">
-                <lable for="lastname"><span class="required-field">*</span>Your Last Name</lable>
+                <label for="lastname"><span class="required-field">*</span>Your Last Name</label>
                 <input type="text" id="lastname" name="lastname" required minlength="2" maxlength="35">
                 <label for="age">Your Age</label>
                 <input type="number" id="age" name="age" min="21" max="1000000">
                 <h5>You must be age 21 or older to enter the contest.</h5>
+                <label><span class="required-field">*</span> Your Secret Code</label>
+                <input type="password" title="6 Alphanumeric Character Passcode" pattern="[0-9 A-Z a-z]{6}" required>
                 <!-- TODO: Create a "lastname" input with type "text" -->
             </div>
             <!-- TODO: Make fieldset and legend -->
             <fieldset>
                 <legend>Your Contact Info</legend>
                 <!-- Todo: Email Input -->
-                <lable for="email"><span class="required-field">*</span>Email</lable>
+                <label for="email"><span class="required-field">*</span>Email</label>
                 <input type="email" id="email" name="email" required>
                 <!-- Todo: Street Address Input -->
-                <lable>Street Address</lable>
+                <label>Street Address</label>
                 <input name="address" type="text">
                 <!-- Todo: City, State, and Zip Inputs -->
-                <lable>City</lable>
+                <label>City</label>
                 <input name="city">
                 <select name="state">
                   <option value="AK">Alaska</option>
@@ -41,31 +43,31 @@
                   <option value="SC">South Carolina</option>
                   <option value="TN">Tennessee</option>
                 </select>
-                <lable>Zip Code</lable>
-                <input name="zip" type="number">
+                <label>Zip Code</label>
+                <input name="zip" type="text" pattern="[0-9]{5}" title="5-Digit US ZIP Code">
             </fieldset>
             <!-- TODO: Second fieldset -->
             <!-- TODO: Radio buttons for selecting preferred destination -->
             <fieldset>
                 <legend>Your Preferences</legend>
                 <div>
-                    <lable>Aruba</lable>
+                    <label>Aruba</label>
                     <input type="radio" name="location" value="Aruba">
                 </div>
                 <div>
-                    <lable>Japan</lable>
+                    <label>Japan</label>
                     <input type="radio" name="location" value="Japan">
                 </div>
                 <div>
-                    <lable>Reykjavik</lable>
+                    <label>Reykjavik</label>
                     <input type="radio" name="location" value="Reykjavik">
                 </div>
                 <div>
-                    <lable>New Zealand</lable>
+                    <label>New Zealand</label>
                     <input type="radio" name="location" value="New Zealand">
                 </div>
                 <!-- TODO: Color input for selecting favorite color -->
-                <lable>Favotite Color</lable>
+                <label>Favotite Color</label>
                 <input name="color" type="color">
                 </fieldset>
                 <!-- TODO: Checkboxes for selecting extra add-ons -->
